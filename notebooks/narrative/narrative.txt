@@ -1,0 +1,81 @@
+Title option 1: “Nucleotide variation in 1,142 genomes of the African malaria mosquitoes Anopheles gambiae and Anopheles coluzzii”
+
+Title option 2: “Genome variation and population structure among 1,142 African malaria mosquitoes”
+
+Title option 3: "The expansion of the Anopheles gambiae 1000 genomes project: whole-genome sequencing of 1,142 malaria mosquitoes from across Sub-Saharan Africa"
+
+
+################
+# Introduction #
+################
+
+Malaria is a serious problem and currently primarily tackled using vector control. Understanding the vector population is therefore crucial.
+
+The previous AG1000G paper represented a step change in our ability to study population structure and the genetics of insecticide resistance in Anopheles mosquitoes, as well as providing a large genomic database that could be used for purposes such as identifying regions for Crispr targeting. However, that dataset had some shortfalls, as it included few coluzzii populations and only one hybrid population.
+
+The current paper adds samples from new countries, including several new coluzzii populations and a new hybrid population, and expands the number of crosses, providing more robust validation of SNP calls. 
+
+
+
+###########
+# Results #
+###########
+
+1. General results: 
+
+Phase 2 adds 377 samples, including several coluzzii populations and some hybrids.
+
+These individuals add >5 million new variants to the project, bringing the total PASS variants up to 57,837,885 and the accessible bases per allele down to 1.9 (from 2.19 in Phase 1).
+
+Phase 2 also adds 7 new crosses, bringing us up to 11 crosses (don’t have exact number of progeny to hand).
+
+Say something about SNP and haplotype validation 
+
+Accessibility was higher in exonic regions than in the genome as a whole, and higher in enchromatin than in euchromatin. This is as expected since repetitive regions are more abundant in non-coding regions and in heterochromatin, and will tend to lower the accessibility of a region. Do we want to note that some regions that might be of interest (ie: Ace-1) are no longer accessibile, due to the additions of samples with high-level duplications in this region?
+
+
+2. Divergence from reference
+
+Performing population genetics to compare gambiae and coluzzii requires an unbiased measure of genetic diversity for both species. We therefore compared the difference from the reference and found that it was largely the same. This makes sense given that PEST has shared ancestry. The high similarity to coluzzii on the X chromosome may be caused by the X-linked pink-eye mutation that the strain was selected for, which comes from its coluzzii ancestor. 
+
+3. Pop gen
+
+Since the new dataset includes the addition of new populations, especially of coluzzii and hybrids, we wanted to repeat the basic pop-gen analyses performed in phase 1. 
+
+AIM analysis shows that gambiae and coluzzii separate well, as expected, except in the two hybrid populations and Kenya. We can see that GW and GM are very similar as far as AIM markers are concerned, whereas Kenya is its own beast. This is because GW and GM are hybrid populations, whereas actual coluzzii ancestry in Kenya is highly unlikely given the absence of coluzzii anywhere nearby. The ancestry of this Kenyan population remains unanswered. [I guess no need to mention 2L introgression in coluzzii, since this was already discussed in phase 1 paper?] 
+
+[referring to PCA figure] In phase 1 of Ag1000G, There were only two populations of Anopheles coluzzii (BF and Angola), which appeared to be genomically very different, with BF clustering closer to gambiae populations than to Angola. With the addition of new coluzzii populations however, we can see that West-African coluzzii now cluster closely together, while coluzzii from Angola still form their own cluster separate from all others. 
+
+Kenyan samples, which clustered largely independely in phase 1, are now found close to gambiae, while the two hybrid populations are closer to coluzzii. As found in the AIM anlysis, GW and GM are very similar to each-other. 
+
+Clustering of gambiae samples is not very geographical, as one cluster contains contains samples from West Africa (Guinea), an island off Central Africa (Bioko), Central Africa (Cameroon) and East Africa (Uganda), while samples from central Africa (Gabon) and an island off Eastern Africa (Mayotte) form two close clusters that are close to each-other in the first two PCs [I can't tell where the BF samples are, they must be hidden underneath one of the clusters, any ideas]
+
+The coluzzii clusters separate Burkina Faso from CI, Guinea and Ghana, suggesting an importance of latitude or perhaps proximity to the coast, while Angola is very different to the rest. 
+
+[referring to IBD] To obtain a more fine-grained analysis of geogrphical genetic structure, we analysed identity by descent within and between populations in the study [from here on I am guessin about what we will find]. As expected, IBD increased with geographic distance, although this increase plateaued after a distance of around xxx [this will probably vary between populations]. At larger distance [on the scale of countries], distant populations sometimes shared more IBD than closer ones, as reflected in the PCA. In countries where we had samples of both coluzzii and gambiae, IBD tanded to decrease with distance more rapidly in xxx than xxx. 
+
+4. Cas9 gene drive
+
+One of the important applications of these genomic resources for the community is its application in developing Cas9 gene drive that targets conserved regions. Already, the phase 1 data has been used to develop a candidate gene drive targeting double-sex. We produce a table to potential gene drive targets in light of the new populations added in phase 2. We also have analysed the target in double-sex in more detail. 
+
+5. Recombination map [are we still including this?]
+
+Another valuable application of these genomic resources is to produce a first approximation of a recombination map for Anopheles gambiae, a salient gap in the genomic knowledge base for this species. The limited number of crosses that were sequenced here do not allow us to produce a detailed a precise map, but this nevertheless provides a vast improvement on what was previously available. 
+
+
+##############
+# Discussion #
+##############
+
+The value of the AG1000G resources have already been demonstrated through their application in a range of studies since the publication of the phase 1 paper [Vgsc paper, sweep paper, double-sex Cas9 target, validation of sequenom platform, ... add more here]. We have added a bunch of samples and new populations to the Ag1000G dataset, providing a substantially improved resource for the community. Already, these extended resouces have been used to study CNVs. 
+
+The improved population genomics of coluzzii populations may point to similarity between coastal populations, perhaps indicating the existance of barriers to migration between the coast and inland populations, or some level of adaptation and preferential migration along the coast. In Anopheles gambiae, for which samples are available from as far apart as Burkina Faso and Mayotte, there is a complex pattern of clustering, with Gabon appearing more similar to Mayotte than to nearby Cameroon, and with Eastern Kenyan samples being very different to everything else. [If IBD analysis contradicts this, discuss why this might be]
+
+The genomic resource not only represents a larger fraction of African diversity, but we have also added new information that will be useful to researchers, such as an improved Cas9 target database [recombination map?]
+
+
+The next step is to expand the dataset still further (phase 3) to include Anopheles arabiensis. 
+
+
+
+
